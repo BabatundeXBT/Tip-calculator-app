@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+    <link href="./output.css" rel="stylesheet" />
+    <!-- <link href="./input.css" rel="stylesheet" /> -->
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="bg-lightgrayishcyan font-mono">
+    <!-- <h1 class="text-center uppercase">Splitter</h1> -->
+    <main
+      class="md: absolute left-[50%] top-[50%] m-auto h-[100%] w-[100%] translate-x-[-50%] translate-y-[-50%] items-center self-center rounded-3xl bg-white md:h-auto md:w-2/5"
+    >
+      <div
+        class="grid grid-rows-2 gap-10 px-5 py-10 md:grid-cols-2 md:grid-rows-1 md:p-10"
+      >
+        <section class="m-auto w-11/12 md:w-full">
+          <div class="">
+            <label for="" class="text-grayishcyan font-semibold">Bill</label>
+            <div class="relative">
+              <img
+                src="../images/icon-dollar.svg"
+                alt="dollar-icon"
+                class="absolute top-4 ml-3 w-3"
+              />
+              <input
+                type="number"
+                name=""
+                id=""
+                placeholder="0"
+                class="text-verydarc border-verylightgrayishcyan bg-verylightgrayishcyan text-md focus:border-darkgrayish block w-full rounded-md border px-3 py-2 text-end text-2xl font-bold shadow-sm [appearance:textfield] focus:outline-none focus:ring-1 focus:ring-cyan-50 [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
+              />
+            </div>
+          </div>
+
+          <div class="mt-8">
+            <p class="text-grayishcyan font-semibold">Select Tip %</p>
+            <div class="mt-4 grid grid-cols-2 gap-4 md:grid-cols-3">
+              <button
+                class="hover:bg-strongcyan hover:text-verydarc btn bg-verydarc rounded-md px-5 py-3 text-2xl font-semibold text-white md:px-6 md:py-2"
+              >
+                5%
+              </button>
+              <button
+                class="hover:bg-strongcyan hover:text-verydarc btn bg-verydarc rounded-md px-5 py-3 text-2xl font-semibold text-white md:px-6 md:py-2"
+              >
+                10%
+              </button>
+              <button
+                class="hover:bg-strongcyan hover:text-verydarc btn bg-verydarc rounded-md px-5 py-3 text-2xl font-semibold text-white md:px-6 md:py-2"
+              >
+                15%
+              </button>
+              <button
+                class="hover:bg-strongcyan hover:text-verydarc btn bg-verydarc rounded-md px-5 py-3 text-2xl font-semibold text-white md:px-6 md:py-2"
+              >
+                25%
+              </button>
+              <button
+                class="hover:bg-strongcyan hover:text-verydarc btn bg-verydarc rounded-md px-5 py-3 text-2xl font-semibold text-white md:px-6 md:py-2"
+              >
+                50%
+              </button>
+
+              <input
+                type="number"
+                placeholder="Custom"
+                class="text-verydarc border-verylightgrayishcyan bg-lightgrayishcyan focus:border-darkgrayish rounded-md px-3 py-2 text-center text-xl font-bold [appearance:textfield] focus:outline-none focus:ring-1 focus:ring-cyan-50 [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
+              />
+            </div>
+          </div>
+          <div class="mt-8">
+            <label for="" class="text-grayishcyan font-semibold"
+              >Number of People</label
+            >
+            <div class="relative">
+              <img
+                src="../images/icon-person.svg"
+                alt="person-icon"
+                class="absolute top-4 ml-3 w-3"
+              />
+              <input
+                type="number"
+                name=""
+                id=""
+                placeholder="0"
+                class="text-verydarc border-verylightgrayishcyan bg-verylightgrayishcyan text-md focus:border-darkgrayish block w-full rounded-md border px-3 py-2 text-end text-2xl font-bold shadow-sm [appearance:textfield] focus:outline-none focus:ring-1 focus:ring-cyan-50 [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
+              />
+            </div>
+          </div>
+        </section>
+        <section
+          class="bg-verydarc m-auto w-11/12 rounded-2xl px-6 py-6 md:w-full"
+        >
+          <div class="flex justify-between md:mt-5">
+            <p class="text-white">
+              Tip Amount <br /><span class="text-grayishcyan">/ person</span>
+            </p>
+            <p class="text-strongcyan mt-2 text-3xl font-bold">
+              $<span>0.00</span>
+            </p>
+          </div>
+          <div class="mt-5 flex justify-between md:mt-10">
+            <p class="text-white">
+              Total <br /><span class="text-grayishcyan">/ person</span>
+            </p>
+            <p class="text-strongcyan mt-2 text-3xl font-bold">
+              $<span>0.00</span>
+            </p>
+          </div>
+          <div>
+            <div class="mt-10 md:mt-32">
+              <button
+                class="bg-strongcyan text-verydarc w-full rounded-lg py-3 text-xl font-bold uppercase"
+              >
+                Reset
+              </button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+  </body>
+</html>
